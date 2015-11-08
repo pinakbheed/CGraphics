@@ -37,7 +37,7 @@ float Vector::lensqr() const {
 Vector Vector::normalize() const {
 	Vector result;
 	
-	float length = sqrtf(x*x + y*y + z*z);
+	float length = this->length();
 	result.x = x / length;
 	result.y = y / length;
 	result.z = z / length;
@@ -55,6 +55,16 @@ bool Vector::operator!=(const Vector& b) const {
 	if (x == b.x && y == b.y && z == b.z)
 		return false;
 	return true;
+}
+
+Vector rt::Vector::scale(float scalar) {
+	Vector result;
+
+	result.x = this->x * scalar;
+	result.y = this->y * scalar;
+	result.z = this->z * scalar;
+
+	return result;
 }
 
 Vector rt::operator*(float scalar, const Vector& b) {

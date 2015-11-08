@@ -13,6 +13,7 @@ public:
 
     Ray() {}
     Ray(const Point& o, const Vector& d);
+	Ray(Point * o, Vector * d);
     Point getPoint(float distance) const;
 };
 

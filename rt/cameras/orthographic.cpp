@@ -5,12 +5,20 @@
 
 using namespace rt;
 
-OrthographicCamera::OrthographicCamera(const Point& center, const Vector& forward, const Vector& up, float scaleX, float scaleY) {
+OrthographicCamera::OrthographicCamera(Point& center, Vector& forward, Vector& up, float scaleX, float scaleY) {
+	this->center = center;
+	this->zAxis = forward.normalize();
+	this->xAxis = cross(up, forward).normalize();
+	this->yAxis = cross(zAxis, xAxis).normalize();
 
+	this->scaleX = scaleX;
+	this->scaleY = scaleY;
 }
 
 Ray OrthographicCamera::getPrimaryRay(float x, float y) const {
-	Ray ray;
+	Point rayOrigin;
 
-	return ray;
+	rayOrigin = center + x * scaleX * xAxis + y * scaleY * yAxis;
+
+	return Ray(rayOrigin, zAxis);
 }

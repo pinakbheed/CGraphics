@@ -50,17 +50,43 @@ Point rt::operator*(const Point& a, float scalar) {
 }
 
 Point rt::min(const Point& a, const Point& b) {
-	Point newPoint;
-	
-	//to implement
+	Point result;
 
-	return newPoint;
+	if (a.x < b.x)
+		result.x = a.x;
+	else
+		result.x = b.x;
+
+	if (a.y < b.y)
+		result.y = a.y;
+	else
+		result.y = b.y;
+
+	if (a.z < b.z)
+		result.z = a.z;
+	else
+		result.z = b.z;
+
+	return result;
 }
 
 Point rt::max(const Point& a, const Point& b) {
-	Point newPoint;
+	Point result;
 
-	//to implement
+	if (a.x > b.x)
+		result.x = a.x;
+	else
+		result.x = b.x;
 
-	return newPoint;
+	if (a.y > b.y)
+		result.y = a.y;
+	else
+		result.y = b.y;
+
+	if (a.z > b.z)
+		result.z = a.z;
+	else
+		result.z = b.z;
+
+	return result;
 }

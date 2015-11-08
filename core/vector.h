@@ -30,6 +30,7 @@ public:
     bool operator==(const Vector& b) const;
     bool operator!=(const Vector& b) const;
 
+	Vector scale(float scalar);
 };
 
 Vector operator*(float scalar, const Vector& b);

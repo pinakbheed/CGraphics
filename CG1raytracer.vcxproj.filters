@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{6b284427-54d4-49ef-afb1-13a3a671aca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt">
+      <UniqueIdentifier>{1b6f65d8-e391-4579-877a-da684d0a40f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\solids">
+      <UniqueIdentifier>{97cb154a-d393-4289-93b1-f994ed3b0e9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{75961c76-1da5-4f6d-82bb-cd87c1449a7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\groups">
+      <UniqueIdentifier>{4192d242-4f00-4f83-b43e-7ec238030d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\materials">
+      <UniqueIdentifier>{475b2ff8-5542-4db7-b665-f1527cf2967b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\integrators">
+      <UniqueIdentifier>{940b1369-5e70-4cfe-ab99-f0241e0dd5a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\cameras">
+      <UniqueIdentifier>{cace52b3-55b0-4e94-9656-29f7b9af3863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\loaders">
+      <UniqueIdentifier>{e316314b-f034-408d-a2ed-d7bf0db23b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\coordmappers">
+      <UniqueIdentifier>{006cd63e-69e3-47eb-9125-a1f7728f6e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\lights">
+      <UniqueIdentifier>{aa0e7211-47ad-4e5a-9a30-dc6c20f9d8a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\textures">
+      <UniqueIdentifier>{7cfa8795-62ac-47fc-bc76-27db1546ae7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt\primmod">
+      <UniqueIdentifier>{4b61d937-eab9-4d02-8944-c81f616617fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\macros.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\scalar.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\vector.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\ray.h">
+      <Filter>rt</Filter>
+    </ClInclude>
+    <ClInclude Include="core\image.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assert.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\solids\infiniteplane.h">
+      <Filter>rt\solids</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\solids\sphere.h">
+      <Filter>rt\solids</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\solids\triangle.h">
+      <Filter>rt\solids</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\groups\simplegroup.h">
+      <Filter>rt\groups</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\materials\flatmaterial.h">
+      <Filter>rt\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\integrators\casting.h">
+      <Filter>rt\integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\cameras\perspective.h">
+      <Filter>rt\cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\renderer.h">
+      <Filter>rt</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\solids\solid.h">
+      <Filter>rt\solids</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\materials\material.h">
+      <Filter>rt\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\integrators\integrator.h">
+      <Filter>rt\integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\groups\group.h">
+      <Filter>rt\groups</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\cameras\camera.h">
+      <Filter>rt\cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\coordmappers\coordmapper.h">
+      <Filter>rt\coordmappers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\coordmappers\world.h">
+      <Filter>rt\coordmappers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\coordmappers\tmapper.h">
+      <Filter>rt\coordmappers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\groups\bvh.h">
+      <Filter>rt\groups</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\materials\phong.h">
+      <Filter>rt\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\materials\mirror.h">
+      <Filter>rt\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\lights\pointlight.h">
+      <Filter>rt\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\lights\light.h">
+      <Filter>rt\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\solids\quad.h">
+      <Filter>rt\solids</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\lights\arealight.h">
+      <Filter>rt\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\integrators\raytrace.h">
+      <Filter>rt\integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\integrators\recraytrace.h">
+      <Filter>rt\integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\materials\lambertian.h">
+      <Filter>rt\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\textures\texture.h">
+      <Filter>rt\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\textures\constant.h">
+      <Filter>rt\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\textures\imagetex.h">
+      <Filter>rt\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\solids\striangle.h">
+      <Filter>rt\solids</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\primmod\bmap.h">
+      <Filter>rt\primmod</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\solids\disc.h">
+      <Filter>rt\solids</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\solids\aabox.h">
+      <Filter>rt\solids</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\coordmappers\axisplane.h">
+      <Filter>rt\coordmappers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\coordmappers\plane.h">
+      <Filter>rt\coordmappers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\coordmappers\cylindrical.h">
+      <Filter>rt\coordmappers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\coordmappers\spherical.h">
+      <Filter>rt\coordmappers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\lights\spotlight.h">
+      <Filter>rt\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\lights\directional.h">
+      <Filter>rt\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="core\point.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\color.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\julia.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\cameras\orthographic.h">
+      <Filter>rt\cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\integrators\castingdist.h">
+      <Filter>rt\integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\groups\kdtree.h">
+      <Filter>rt\groups</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\primmod\instance.h">
+      <Filter>rt\primmod</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\materials\dummy.h">
+      <Filter>rt\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\materials\combine.h">
+      <Filter>rt\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\textures\checkerboard.h">
+      <Filter>rt\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\materials\glass.h">
+      <Filter>rt\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\materials\fuzzymirror.h">
+      <Filter>rt\materials</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main\main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="core\image.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\scalar.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\julia.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="main\a_julia.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\a_cameras.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="core\vector.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="rt\renderer.cpp">
+      <Filter>rt</Filter>
+    </ClCompile>
+    <ClCompile Include="rt\ray.cpp">
+      <Filter>rt</Filter>
+    </ClCompile>
+    <ClCompile Include="core\point.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="rt\cameras\orthographic.cpp">
+      <Filter>rt\cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="rt\cameras\perspective.cpp">
+      <Filter>rt\cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="core\color.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -12,10 +12,9 @@ typedef unsigned char byte;
 using namespace rt;
 
 void a_julia(SDL_Window * gWindow) {
-    Image img(300, 300);
+    Image img(800, 800);
     Renderer engine(0,0);
 	engine.test_render1(img);
-	//engine.test_render2(img);
 	
 	RGBColor * it = img.getPixels();
 	byte * ptr = (byte *)malloc(img.width()*img.height() * 3);
@@ -34,12 +33,10 @@ void a_julia(SDL_Window * gWindow) {
 	Uint32 gmask = 0x0000ff00;
 	Uint32 bmask = 0x00ff0000;
 	
-	//SDL_Surface * test = SDL_CreateRGBSurface(SDL_SWSURFACE, img.width(), img.height(), 8, rmask, gmask, bmask, amask);	
-	SDL_Surface * test2 = SDL_CreateRGBSurfaceFrom(head, img.width(), img.height(), 24, img.width() * 3, rmask, gmask, bmask, 0);
+	SDL_Surface * image = SDL_CreateRGBSurfaceFrom(head, img.width(), img.height(), 24, img.width() * 3, rmask, gmask, bmask, 0);
 
-	SDL_BlitSurface(test2, NULL, SDL_GetWindowSurface(gWindow), NULL);
+	SDL_BlitSurface(image, NULL, SDL_GetWindowSurface(gWindow), NULL);
 	SDL_UpdateWindowSurface(gWindow);
 	
-
-	img.writePNG("test.png");
+	img.writePNG("fractal.png");
 }

@@ -18,6 +18,17 @@ public:
         );
 
     virtual Ray getPrimaryRay(float x, float y) const;
+
+	Point center;
+	Vector xAxis;
+	Vector yAxis;
+	Vector zAxis;
+
+	float verticalOpeningAngle;
+	float horizonalOpeningAngle;
+	float angle;
+	float focus;
+	float ratio;
 };
 
 }
